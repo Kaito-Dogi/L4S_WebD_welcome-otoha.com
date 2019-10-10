@@ -7,36 +7,6 @@ body{
     font-family: "Noto Serif JP";
 }
 
-/*@font-face {
-    font-family: "MyFont";
-    src: url(fonts-NotoSansCJKjp/NotoSansCJKjp-Light.otf) format("opentype");
-    font-weight: 100;
-}
-
-@font-face {
-    font-family: "MyFont";
-    src: url(fonts-NotoSansCJKjp/NotoSansCJKjp-Regular.otf) format("opentype");
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: "MyFont";
-    src: url(fonts-NotoSansCJKjp/NotoSansCJKjp-Medium.otf) format("opentype");
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "MyFont";
-    src: url(fonts-NotoSansCJKjp/NotoSansCJKjp-Bold.otf) format("opentype");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "MyFont";
-    src: url(fonts-NotoSansCJKjp/NotoSansCJKjp-Black.otf) format("opentype");
-    font-weight: 500;
-}*/
-
 .index{
     display: none;
 }
