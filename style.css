@@ -13,6 +13,10 @@ body {
 }
 
 /*ファーストビュー設定*/
+#nav-drawer{
+    display: none;
+}
+
 .heroForStyle {
     width: 100%;
     position: relative;
@@ -42,10 +46,14 @@ header p {
 }
 
 /*navバーの作成*/
+nav {
+    position: relative;
+}
+
 ul {
     list-style-type: none;
     text-align: center;
-    padding: 16px 0;
+    padding: 1.5% 0;
 }
 
 li {
@@ -53,7 +61,13 @@ li {
     margin: 2%;
 }
 
-a{
+.navImg {
+    position: absolute;
+    top: 23%;
+    left: 2.5%;
+}
+
+.navItem {
     font-size: 24rem;
     text-decoration: none;
     -webkit-transition: 0.3s;
@@ -61,6 +75,6 @@ a{
     transition: 0.2s;
 }
 
-a:hover{
+a:hover {
     color: rgba(255, 255, 255, 0.35);
 }
