@@ -12,11 +12,11 @@ body {
     background-size: cover;
 }
 
-/*ファーストビュー設定*/
-#nav-drawer{
-    display: none;
+section {
+    margin: 0 0 300px;
 }
 
+/*ファーストビュー設定*/
 .heroForStyle {
     width: 100%;
     position: relative;
@@ -35,7 +35,7 @@ header p {
     font-weight: 400;
     text-align: center;
     position: absolute;
-    top: 72%;
+    top: 58%;
     right: 0;
     left: 0;
     margin: 0 auto;
@@ -77,4 +77,45 @@ li {
 
 a:hover {
     color: rgba(255, 255, 255, 0.35);
+}
+
+/*弦音巴とは？作成*/
+#whatIsOtoha {
+    background-image: url(imageForStyle/whatIsOtoha.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 300px;
+}
+
+#whatIsOtoha img {
+    width: 33%;
+    display: block;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+#whatIsOtoha .purpose {
+    text-align: center;
+    font-size: 32rem;
+    display: inline-block;
+    padding: 1% 2%;
+}
+
+#whatIsOtoha .purposeContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0 0 5%;
+}
+
+#explanationStyle {
+    text-align: center;
+    font-size: 16rem;
+    padding: 0 0 5%;
+    line-height: 7rem
+}
+
+#explanationMobile {
+    display: none;
 }
