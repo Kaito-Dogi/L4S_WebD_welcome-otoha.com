@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 62.5%;
+    font-size: 1px;
     color: #e8effb;
 }
 
@@ -15,11 +15,6 @@ body {
 /*ファーストビュー設定*/
 header {
     text-align: center;
-    background-image: url(imageForMobile/hero.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-
 }
 
 .heroForStyle {
@@ -28,16 +23,45 @@ header {
 
 .heroForMobile {
     width: 100%;
+    position: relative;
+}
+
+/*header h1 {
+    font-size: 56rem;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    color: #020208;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0);
+    text-align: center;
+}*/
+
+header p {
+    display: none;
 }
 
 .catchPhrase {
-    font-size: 2rem;
-    font-weight: 400;
     text-align: center;
     padding: 160px 0;
     background-image: url(imageForMobile/string.png);
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+}
+
+.catchPhrase p {
+    font-size: 20rem;
+    font-weight: 400;
+}
+
+nav {
+    display: none;
 }

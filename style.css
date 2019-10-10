@@ -15,12 +15,33 @@ body {
 /*ファーストビュー設定*/
 .heroForStyle {
     width: 100%;
+    position: relative;
 }
 
-heroForMobile {
+.heroForMobile {
     display: none;
+}
+
+header h1 {
+    display: none;
+}
+
+header p {
+    font-size: 32rem;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    top: 72%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
 }
 
 .catchPhrase {
     display: none;
+}
+
+/*navバーの作成*/
+ul {
+    list-style-type: none;
 }
