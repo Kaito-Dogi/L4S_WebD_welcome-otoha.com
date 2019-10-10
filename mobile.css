@@ -87,12 +87,12 @@ nav {
     width: 80%;
     display: block;
     margin: 0 auto;
-    padding: 30% 0;
+    padding: 30% 0 20%;
 }
 
 #whatIsOtoha .purpose {
     text-align: center;
-    font-size: 22rem;
+    font-size: 24rem;
     display: inline-block;
     padding: 2% 0;
 }
@@ -112,5 +112,5 @@ nav {
     text-align: center;
     font-size: 12rem;
     padding: 0 0 30%;
-    line-height: 1.5;
+    line-height: 2;
 }
