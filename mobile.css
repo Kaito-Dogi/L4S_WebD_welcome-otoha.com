@@ -1,16 +1,43 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    font-size: 62.5%;
+    color: #e8effb;
 }
 
-body{
+body {
     font-family: "Noto Serif JP";
+    background-image: url(background/backgroundForMobile.gif);
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
-.index{
+/*ファーストビュー設定*/
+header {
+    text-align: center;
+    background-image: url(imageForMobile/hero.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.heroForStyle {
     display: none;
 }
 
-.mobile{
-    font-weight: 900;
+.heroForMobile {
+    width: 100%;
+}
+
+.catchPhrase {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 160px 0;
+    background-image: url(imageForMobile/string.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
 }

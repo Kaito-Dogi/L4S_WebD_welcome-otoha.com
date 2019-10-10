@@ -1,16 +1,26 @@
 * {
     padding: 0;
     margin: 0;
+    font-size: 1px;
+    color: #e8effb;
 }
 
-body{
+body {
     font-family: "Noto Serif JP";
+    background-image: url(background/backgroundForStyle.gif);
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
-.index{
-    font-weight: 300;
+/*ファーストビュー設定*/
+.heroForStyle {
+    width: 100%;
 }
 
-.mobile{
+heroForMobile {
+    display: none;
+}
+
+.catchPhrase {
     display: none;
 }
