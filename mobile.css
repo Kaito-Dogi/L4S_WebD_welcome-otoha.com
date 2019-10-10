@@ -84,7 +84,7 @@ nav {
 }
 
 #whatIsOtoha img {
-    width: 66%;
+    width: 80%;
     display: block;
     margin: 0 auto;
     padding: 20% 0;
@@ -104,7 +104,7 @@ nav {
     padding: 0 0 20%;
 }
 
-#explanationStyle{
+#explanationStyle {
     display: none;
 }
 
@@ -112,5 +112,5 @@ nav {
     text-align: center;
     font-size: 12rem;
     padding: 0 0 20%;
-    line-height: 4rem
+    line-height: 6rem
 }
