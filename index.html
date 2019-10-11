@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>welcome-otoha</title>
-    <link rel="stylesheet" media="(min-width:801px)" href="style.css">
-    <link rel="stylesheet" media="(max-width:800px)" href="mobile.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="style.css">
+    <link rel="stylesheet" media="(max-width:767px)" href="mobile.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400,500,700,900&display=swap&subset=japanese" rel="stylesheet">
 </head>
 
 <body>
+    <!-- ファーストビュー作成 -->
     <header>
         <img class="heroForStyle" src="imageForStyle/hero.jpg" width="100%" alt="">
         <img class="heroForMobile" src="imageForMobile/hero.jpg" width="100%" alt="">
@@ -36,14 +37,17 @@
         <a class="navImg" href="https://otohakeio.wixsite.com/keiootoha"><img src="imageForStyle/otoha-logo.png" alt=""></a>
         <ul>
             <li><a class="navItem" href="#whatIsOtoha">弦音巴とは？</a></li>
-            <li><a class="navItem" href="">説明会・ライブ</a></li>
+            <li><a class="navItem" href="#expMeetAndLive">説明会・ライブ</a></li>
             <li><a class="navItem" href="">練習見学</a></li>
             <li><a class="navItem" href="">新歓食事会</a></li>
             <li><a class="navItem" href="">活動風景</a></li>
             <li><a class="navItem" href="">コンタクト</a></li>
         </ul>
     </nav>
+    
+    <a id="navImgForMobile" href="https://otohakeio.wixsite.com/keiootoha"><img src="imageForStyle/otoha-logo.png" alt=""></a>
 
+    <!-- 弦音巴とは？作成 -->
     <section id="whatIsOtoha">
         <img src="imageForStyle/whatIsOtoha-otoha-logo.png" alt="">
         <div class="purposeContainer">
@@ -66,6 +70,104 @@
             ほぼ全員のメンバーが初心者から始めました。<br>
             最後の学生生活、私たちと共に「挑戦」しませんか？
         </p>
+    </section>
 
+    <!-- 説明会・ライブ作成 -->
+    <section id="videosForMobile">
+        <div class="video">
+            <p>☟新歓PV</p>
+            <iframe src="https://www.youtube.com/embed/DqWkuS_Gkjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <p>☟単独公演</p>
+            <iframe src="https://www.youtube.com/embed/lxrwAzXOgNs?start=2110" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="expMeetAndLive">
+        <div id="shinkan-pv" class="video">
+            <p>☟新歓PV</p>
+            <iframe src="https://www.youtube.com/embed/DqWkuS_Gkjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="tandokukouen" class="video">
+            <p>☟単独公演</p>
+            <iframe src="https://www.youtube.com/embed/lxrwAzXOgNs?start=2110" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div id="expBox" class="expMeetAndLivebox">
+            <div class="boxTitle">
+                <p>説明会</p>
+            </div>
+            <div class="dateBox">
+                <div class="dayBox">
+                    <p>3</p>
+                </div>
+                <div class="monthBox">
+                    <p>April
+                        <br><span>Wed.</span></p>
+                </div>
+                <div class="timeAndSpaceBox">
+                    <p>15:00~16:00 ＠D309</p>
+                </div>
+            </div>
+            <div class="dateBox">
+                <div class="dayBox">
+                    <p>4</p>
+                </div>
+                <div class="monthBox">
+                    <p>April
+                        <br><span>Thu.</span></p>
+                </div>
+                <div class="timeAndSpaceBox">
+                    <p>15:00~16:00 ＠j434B</p>
+                </div>
+            </div>
+            <div class="dateBox">
+                <div class="dayBox">
+                    <p>5</p>
+                </div>
+                <div class="monthBox">
+                    <p>April
+                        <br><span>Fri.</span></p>
+                </div>
+                <div class="timeAndSpaceBox">
+                    <p>15:00~16:00 ＠D309</p>
+                </div>
+            </div>
+        </div>
+        <div id="liveBox" class="expMeetAndLivebox">
+            <div class="boxTitle">
+                <p>ライブ</p>
+            </div>
+            <div id="blankBox" class="dateBox"></div>
+            <div class="dateBox">
+                <div class="dayBox">
+                    <p>3</p>
+                </div>
+                <div class="monthBox">
+                    <p>April
+                        <br><span>Wed.</span></p>
+                </div>
+                <div class="timeAndSpaceBox">
+                    <p>10:20~10:40 ＠中庭</p>
+                </div>
+            </div>
+            <div class="dateBox">
+                <div class="dayBox">
+                    <p>4</p>
+                </div>
+                <div class="monthBox">
+                    <p>April
+                        <br><span>Thu.</span></p>
+                </div>
+                <div class="timeAndSpaceBox">
+                    <p>11:30~11:50 ＠藤山記念館前</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 練習見学作成 -->
+    <section>
+        
     </section>
 </body></html>

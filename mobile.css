@@ -13,7 +13,7 @@ body {
 }
 
 section {
-    margin: 0 0 300px;
+    margin: 0 0 160px;
 }
 
 /*ファーストビュー設定*/
@@ -32,13 +32,14 @@ header {
 
 header div h1 {
     font-size: 56rem;
-    font-weight: 300;
+    font-weight: 500;
     padding: 40% 2% 5%;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
-    color: #020208;
-    background-color: rgba(255, 255, 255, 0.9);
+    color: #fff;
+    border: 4px solid #fff;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
 }
 
 header div {
@@ -47,8 +48,7 @@ header div {
     right: 0;
     left: 0;
     margin: 0 auto;
-    border: 1px solid rgba(255, 255, 255, 0);
-    width: 22%;
+    width: 26%;
 }
 
 header p {
@@ -57,7 +57,7 @@ header p {
 
 .catchPhrase {
     text-align: center;
-    padding: 160px 0;
+    padding: 240px 0;
     background-image: url(imageForMobile/string.png);
     -webkit-background-size: contain;
     background-size: contain;
@@ -71,8 +71,16 @@ header p {
     font-weight: 400;
 }
 
+/*navバーの作成*/
 nav {
     display: none;
+}
+
+#navImgForMobile{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
 }
 
 /*弦音巴とは？作成*/
@@ -81,10 +89,11 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin: 40px 0;
 }
 
 #whatIsOtoha img {
-    width: 80%;
+    width: 66%;
     display: block;
     margin: 0 auto;
     padding: 30% 0 20%;
@@ -114,3 +123,127 @@ nav {
     padding: 0 0 30%;
     line-height: 2;
 }
+
+/*説明会・ライブ作成*/
+#videosForMobile {
+    width: 90%;
+    background-image: url(imageForMobile/string.png);
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 80px auto;
+    padding: 40px 0 40px;
+
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    padding: 20px 0;
+}
+
+.video p {
+    display: inline-block;
+    font-size: 14rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 240px;
+}
+
+#expMeetAndLive .video {
+    display: none;
+}
+
+#expMeetAndLive {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.expMeetAndLivebox {
+    width: 90%;
+    height: 200px;
+    box-sizing: border-box;
+    border: 4px solid #fff;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px auto;
+}
+
+.boxTitle p {
+    color: #020208;
+    font-size: 32rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.9;
+}
+
+.boxTitle {
+    background-color: #fff;
+    width: 50%;
+    height: 50%;
+}
+
+.dateBox {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    height: 50%;
+    width: 50%;
+}
+
+.dayBox {
+    width: 25%;
+    height: 60%;
+    box-sizing: border-box;
+}
+
+.dayBox p {
+    font-size: 32rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.monthBox {
+    width: 75%;
+    height: 60%;
+    box-sizing: border-box;
+    padding-top: 3%;
+}
+
+.monthBox p {
+    font-size: 8rem;
+    font-weight: 300;
+}
+
+.monthBox p span {
+    font-size: 16rem;
+    font-weight: 400;
+}
+
+.timeAndSpaceBox {
+    width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+    padding-left: 5%
+}
+
+.timeAndSpaceBox p {
+    font-size: 12rem;
+    font-weight: 400;
+}
+
+/*練習見学作成*/
