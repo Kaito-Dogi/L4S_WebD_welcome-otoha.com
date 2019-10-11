@@ -140,6 +140,7 @@ a:hover {
 .video p {
     display: inline-block;
     font-size: 14rem;
+    font-weight: 400;
     position: absolute;
     top: 0;
     left: 0;
