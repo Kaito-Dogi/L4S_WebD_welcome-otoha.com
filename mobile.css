@@ -126,7 +126,7 @@ nav {
 
 /*説明会・ライブ作成*/
 #videosForMobile {
-    width: 84%;
+    width: 88%;
     background-image: url(imageForMobile/string.png);
     -webkit-background-size: contain;
     background-size: contain;
@@ -173,7 +173,7 @@ nav {
 }
 
 .expMeetAndLivebox {
-    width: 84%;
+    width: 88%;
     height: 200px;
     box-sizing: border-box;
     border: 4px solid #fff;
@@ -242,7 +242,7 @@ nav {
 }
 
 .timeAndSpaceBox p {
-    font-size: 12rem;
+    font-size: 10.5rem;
     font-weight: 400;
 }
 
