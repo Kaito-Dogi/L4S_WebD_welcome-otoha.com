@@ -16,7 +16,7 @@ section {
     margin: 0 0 120px;
 }
 
-.imgForStyle {
+.forStyle {
     display: none;
 }
 
@@ -184,7 +184,7 @@ nav {
     border: 4px solid #fff;
     display: flex;
     flex-flow: row wrap;
-    margin: 20px auto;
+    margin: 26px auto;
 }
 
 .boxTitle p {
@@ -307,7 +307,7 @@ nav {
     border: 4px solid #fff;
     box-sizing: border-box;
     position: relative;
-    margin: 0 auto;
+    margin: 26px auto;
 }
 
 #praExpBoxForMobile {
@@ -349,6 +349,7 @@ nav {
     align-content: space-between;
     margin: 0 auto;
     padding: 6% 0;
+    box-sizing: border-box;
 }
 
 .practiceDateBox {
@@ -364,10 +365,12 @@ nav {
 
 #slideForMobile {
     width: 68%;
-    padding-top: 6%;
-    margin: 0 auto;
+    margin: 16px auto 0;
 }
 
+#slideForMobile img{
+    width: 100%;
+}
 
 /*新歓食事会作成*/
 .welcomePartyTitle {
@@ -488,6 +491,72 @@ nav {
 }
 
 /*活動風景作成*/
+#gallery p{
+    font-size: 24rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.slider-for{
+    width: 76%;
+    margin: 30px auto;
+}
+
+.slider-for img{
+    width: 100%;
+}
+
+.slider-nav{
+    width: 72%;
+    margin: 30px auto;
+}
+
+.slider-nav img{
+    width: 100%;
+}
+
+/*コンタクト作成*/
+#contact p{
+    font-size: 24rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#contact .forMobile{
+    font-size: 12rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#contact ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1.5% 0;
+}
+
+#contact li {
+    display: inline;
+    margin: 2%;
+}
+
+#contact a {
+    font-size: 24rem;
+    color: #020208;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+/*フッター作成*/
+footer{
+    color: #fff;
+    font-size: 8rem;
+    line-height: 4.2;
+    vertical-align: middle;
+    background-color: #020208;
+    text-align: center;
+    width: 100%;
+    height: 32px;
+}
 
 /*jQuery*/
 .fuwatAnime {

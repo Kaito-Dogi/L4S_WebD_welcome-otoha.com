@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400,500,700,900&display=swap&subset=japanese" rel="stylesheet">
     <script src="jquery-3.4.1.min.js"></script>
+
+    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="slick/slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -41,8 +46,8 @@
             <li><a class="navItem" href="#expMeetAndLive">説明会・ライブ</a></li>
             <li><a class="navItem" href="#practiceVisit">練習見学</a></li>
             <li><a class="navItem" href="#welcomeParty">新歓食事会</a></li>
-            <li><a class="navItem" href="">活動風景</a></li>
-            <li><a class="navItem" href="">コンタクト</a></li>
+            <li><a class="navItem" href="#gallery">活動風景</a></li>
+            <li><a class="navItem" href="#contact">コンタクト</a></li>
         </ul>
     </nav>
 
@@ -239,8 +244,8 @@
             </div>
         </div>
         <div id="welcomePartyContainer">
-            <img class="imgForStyle" src="imageForStyle/welcomeParty.png" alt="">
-            <img class="imgForMobile" src="imageForMobile/welcomeParty.png" alt="">
+            <img class="forStyle" src="imageForStyle/welcomeParty.png" alt="">
+            <img class="forMobile" src="imageForMobile/welcomeParty.png" alt="">
             <div id="welcomePartyInfoContainer">
                 <div class="welcomePartyDateBox">
                     <div class="welcomePartyDayBox">12</div>
@@ -275,8 +280,43 @@
             </div>
         </div>
     </section>
-    
+
     <!-- 活動風景作成 -->
+    <section id="gallery" class="fuwat">
+        <p>活動風景</p>
+        <ul class="slider-for">
+            <li><img src="imagesForSlick/slide-2019-laviere.jpg" alt=""></li>
+            <li><img src="imagesForSlick/slide-2019-tanasai.jpg" alt=""></li>
+            <li><img src="imagesForSlick/slide-2019-summerGasshuku.jpg" alt=""></li>
+            <li><img src="imagesForSlick/slide-2018-kurashiki.jpg" alt=""></li>
+            <li><img src="imagesForSlick/slide-2018-shamifes.jpg" alt=""></li>
+        </ul>
+        <ul class="slider-nav">
+            <li><img src="imagesForSlick/slide-2019-laviere.jpg" alt=""></li>
+            <li><img src="imagesForSlick/slide-2019-tanasai.jpg" alt=""></li>
+            <li><img src="imagesForSlick/slide-2019-summerGasshuku.jpg" alt=""></li>
+            <li><img src="imagesForSlick/slide-2018-kurashiki.jpg" alt=""></li>
+            <li><img src="imagesForSlick/slide-2018-shamifes.jpg" alt=""></li>
+        </ul>
+    </section>
+
+    <!-- コンタクト作成 -->
+    <section id="contact" class="fuwat">
+        <p>コンタクト</p>
+        <div>
+            <ul>
+                <li><a href="https://twitter.com/keio_otoha">あ</a></li>
+                <li><a href="https://www.instagram.com/keio_otoha_tokyo/?hl=ja">い</a></li>
+                <li><a href="https://www.facebook.com/keiootoha/">う</a></li>
+            </ul>
+        </div>
+        <p class="forStyle">お問い合わせは公式メールアドレスまたは各種SNSにて受け付けております。</p>
+        <p class="forMobile">お問い合わせは公式メールアドレス<br>または各種SNSにて受け付けております。</p>
+    </section>
+
+    <footer>
+        ⓒ津軽三味線集団弦音巴
+    </footer>
 
     <!-- jQuery -->
     <script type="text/javascript">
@@ -294,4 +334,30 @@
             });
         });
     </script>
+
+    <script type="text/javascript">
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: false,
+            focusOnSelect: true,
+            responsive: [{
+                breakpoint: 801,
+                settings: {
+                    slidesToShow: 3,
+                    dots: false,
+                }
+            }, ]
+        });
+    </script>
+
 </body></html>

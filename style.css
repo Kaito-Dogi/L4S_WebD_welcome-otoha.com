@@ -18,7 +18,7 @@ section {
     margin: 0 0 180px;
 }
 
-.imgForMobile{
+.forMobile {
     display: none;
 }
 
@@ -57,13 +57,13 @@ nav {
     background-color: rgba(2, 2, 8, 0.9);
 }
 
-ul {
+nav ul {
     list-style-type: none;
     text-align: center;
     padding: 1.5% 0;
 }
 
-li {
+nav li {
     display: inline;
     margin: 2%;
 }
@@ -202,7 +202,7 @@ a:hover {
 .boxTitle p {
     color: #020208;
     font-size: 40rem;
-    font-weight: 700;
+    font-weight: 500;
     text-align: center;
     vertical-align: middle;
     line-height: 3.6;
@@ -495,7 +495,7 @@ a:hover {
     font-weight: 500;
 }
 
-#welcomePartyContainer:before {
+#welcomePartyContainer::before {
     content: "　新歓食事会　";
     position: absolute;
     top: 0;
@@ -509,23 +509,95 @@ a:hover {
     padding: 0 2%;
 }
 
-.welcomePartyTitle{
+.welcomePartyTitle {
     display: none;
 }
 
-#welcomePartyContainerForMobile{
+#welcomePartyContainerForMobile {
     display: none;
 }
 
-.welcomePartyTimeAndPlaceBoxForMobile{
+.welcomePartyTimeAndPlaceBoxForMobile {
     display: none;
 }
 
-.welcomePartyExplanationForMobile{
+.welcomePartyExplanationForMobile {
     display: none;
 }
 
 /*活動風景作成*/
+#gallery p {
+    font-size: 56rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.slider-for {
+    width: 56%;
+    margin: 0 auto;
+}
+
+.slider-for img {
+    width: 100%;
+}
+
+.slider-nav {
+    width: 56%;
+    margin: 3% auto 0;
+}
+
+.slider-nav img {
+    width: 100%;
+}
+
+/*コンタクト作成*/
+#contact p {
+    font-size: 56rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#contact .forStyle {
+    font-size: 20rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#contact ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#contact li {
+    display: inline-block;
+    background-color: #fff;
+    width: 32px;
+    padding: 32px;
+    margin: 32px;
+}
+
+#contact a {
+    font-size: 24rem;
+    color: #020208;
+    text-decoration: none;
+}
+
+#contact li:hover{
+        opacity: 0.5;
+}
+
+/*フッター作成*/
+footer{
+    color: #fff;
+    font-size: 14rem;
+    line-height: 4.5;
+    vertical-align: middle;
+    background-color: #020208;
+    text-align: center;
+    width: 100%;
+    height: 64px;
+}
 
 /*jQuery*/
 .fuwatAnime {
