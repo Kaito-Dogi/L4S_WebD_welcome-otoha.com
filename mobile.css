@@ -13,7 +13,7 @@ body {
 }
 
 section {
-    margin: 0 0 160px;
+    margin: 0 0 120px;
 }
 
 /*ファーストビュー設定*/
@@ -80,7 +80,7 @@ nav {
     position: absolute;
     top: 16px;
     left: 16px;
-    z-index: 9999;
+    z-index: 1;
 }
 
 /*弦音巴とは？作成*/
@@ -120,6 +120,7 @@ nav {
 #whatIsOtoha #explanationMobile {
     text-align: center;
     font-size: 12rem;
+    font-weight: 400;
     padding: 0 0 30%;
     line-height: 2;
 }
@@ -247,3 +248,164 @@ nav {
 }
 
 /*練習見学作成*/
+#imgWithTeacher {
+    display: none;
+}
+
+#imgKensho {
+    display: none;
+}
+
+#practiceTitle {
+    position: relative;
+}
+
+#practiceTitle img {
+    width: 100%;
+}
+
+#practiceTitleSquare {
+    background-color: #fff;
+    width: 40%;
+    padding-top: 40%;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(12deg);
+    position: absolute;
+    z-index: 1;
+}
+
+#practiceTitle p {
+    color: #020208;
+    display: inline-block;
+    text-align: center;
+    font-size: 24rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+#practiceInfo .blankImg {
+    display: none;
+}
+
+#practiceExplanation {
+    width: 68%;
+    padding-top: 68%;
+    border: 4px solid #fff;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+
+#praExpBoxForMobile {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -weblit- transform: translateY(-50%) translateX(-50%);
+}
+
+#praExpTimeAndPlace {
+    display: none;
+}
+
+#praExpTimeAndPlaceForMobile {
+    font-size: 18rem;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+#praExpText {
+    display: none;
+}
+
+#praExpTextForMobile {
+    font-size: 12rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#practiceDateBoxContainer {
+    width: 68%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0 auto;
+    padding: 6% 0;
+}
+
+.practiceDateBox {
+    width: 44%;
+    padding: 6% 0;
+    box-sizing: border-box;
+
+}
+
+.practiceDateBox img {
+    width: 100%;
+}
+
+#slideForMobile {
+    width: 68%;
+    padding-top: 6%;
+    margin: 0 auto;
+}
+
+
+/*新歓食事会作成*/
+
+
+/*jQuery*/
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

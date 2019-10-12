@@ -10,10 +10,12 @@ body {
     background-image: url(background/backgroundForStyle.gif);
     -webkit-background-size: cover;
     background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 section {
-    margin: 0 0 220px;
+    margin: 0 0 180px;
 }
 
 /*ファーストビュー設定*/
@@ -67,6 +69,7 @@ li {
     top: 23%;
     left: 2.5%;
     z-index: 9999;
+    transition: 0.2s
 }
 
 #navImgForMobile {
@@ -82,7 +85,7 @@ li {
 }
 
 a:hover {
-    color: rgba(255, 255, 255, 0.35);
+    opacity: 0.5;
 }
 
 /*弦音巴とは？作成*/
@@ -91,7 +94,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 220px;
+    margin-top: 120px;
 }
 
 #whatIsOtoha img {
@@ -257,3 +260,176 @@ a:hover {
 }
 
 /*練習見学作成*/
+#practiceVisit {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.practiceBox {
+    width: 50%;
+    height: 50%;
+}
+
+#imgWithTeacher {
+    order: 1;
+}
+
+#imgWithTeacher img {
+    width: 100%;
+}
+
+#imgKensho {
+    order: 4;
+}
+
+#imgKensho img {
+    width: 100%;
+}
+
+#practiceTitle {
+    position: relative;
+    order: 2;
+}
+
+#practiceTitle img {
+    width: 100%;
+}
+
+#practiceTitleSquare {
+    background-color: #fff;
+    width: 38%;
+    padding-top: 38%;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(12deg);
+    position: absolute;
+    z-index: 1;
+}
+
+#practiceTitle p {
+    color: #020208;
+    display: inline-block;
+    text-align: center;
+    font-size: 44rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+#practiceInfo {
+    order: 3;
+    position: relative;
+}
+
+#practiceInfo img {
+    width: 100%;
+}
+
+#practiceExplanationContainer {
+    position: absolute;
+    width: 80%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit- transform: translateY(-50%) translateX(-50%);
+    align-content: space-between;
+}
+
+#practiceExplanation {
+    border: 4px solid #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#praExpTimeAndPlace {
+    font-size: 24rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 4% 0 2%;
+}
+
+#praExpText {
+    font-size: 12rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 2% 0 4%;
+}
+
+#practiceDateBoxContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 8%;
+}
+
+.practiceDateBox {
+    width: 20%;
+}
+
+#praExpTimeAndPlaceForMobile {
+    display: none;
+}
+
+#praExpTextForMobile {
+    display: none;
+}
+
+#slideForMobile {
+    display: none;
+}
+
+/*新歓食事会作成*/
+
+
+/*jQuery*/
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.2s;
+    -ms-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" media="(max-width:767px)" href="mobile.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:300,400,500,700,900&display=swap&subset=japanese" rel="stylesheet">
+    <script src="jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
         </p>
     </header>
 
-    <section class="catchPhrase">
+    <section class="catchPhrase fuwat">
         <p>
             今しかできない新しいこと、<br>
             慶應でしかできないこと、<br>
@@ -38,8 +39,8 @@
         <ul>
             <li><a class="navItem" href="#whatIsOtoha">弦音巴とは？</a></li>
             <li><a class="navItem" href="#expMeetAndLive">説明会・ライブ</a></li>
-            <li><a class="navItem" href="">練習見学</a></li>
-            <li><a class="navItem" href="">新歓食事会</a></li>
+            <li><a class="navItem" href="#practiceVisit">練習見学</a></li>
+            <li><a class="navItem" href="#welcomeParty">新歓食事会</a></li>
             <li><a class="navItem" href="">活動風景</a></li>
             <li><a class="navItem" href="">コンタクト</a></li>
         </ul>
@@ -48,7 +49,7 @@
     <a id="navImgForMobile" href="https://otohakeio.wixsite.com/keiootoha"><img src="imageForStyle/otoha-logo.png" alt=""></a>
 
     <!-- 弦音巴とは？作成 -->
-    <section id="whatIsOtoha">
+    <section id="whatIsOtoha" class="fuwat">
         <img src="imageForStyle/whatIsOtoha-otoha-logo.png" alt="">
         <div class="purposeContainer">
             <p class="purpose">「新しいことがしたい。」<p>
@@ -73,7 +74,7 @@
     </section>
 
     <!-- 説明会・ライブ作成 -->
-    <section id="videosForMobile">
+    <section id="videosForMobile" class="fuwat">
         <div class="video">
             <p>☟新歓PV</p>
             <iframe src="https://www.youtube.com/embed/DqWkuS_Gkjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -84,7 +85,7 @@
         </div>
     </section>
 
-    <section id="expMeetAndLive">
+    <section id="expMeetAndLive" class="fuwat">
         <div id="shinkan-pv" class="video">
             <p>☟新歓PV</p>
             <iframe src="https://www.youtube.com/embed/DqWkuS_Gkjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -167,7 +168,78 @@
     </section>
 
     <!-- 練習見学作成 -->
-    <section>
+    <section id="practiceVisit" class="fuwat">
+        <div id="imgWithTeacher" class="practiceBox"><img src="imageForStyle/practiceWithTeacher.jpg" alt=""></div>
+        <div id="imgKensho" class="practiceBox"><img src="imageForStyle/practiceKensho.jpg" alt=""></div>
+        <div id="practiceTitle" class="practiceBox">
+            <img src="imageForStyle/blank.png" alt="">
+            <div id="practiceTitleSquare"></div>
+            <p>練習
+                <br>見学
+            </p>
+        </div>
+        <div id="practiceInfo" class="practiceBox">
+            <img class="blankImg" src="imageForStyle/blank.png" alt="">
+            <div id="practiceExplanationContainer">
+                <div id="practiceExplanation">
+                    <div id="praExpBoxForMobile">
+                        <p id="praExpTimeAndPlace">18:15　諭吉先生像前　集合</p>
+                        <p id="praExpTimeAndPlaceForMobile">18:15
+                            <br>諭吉先生像前　集合</p>
+                        <p id="praExpText">毎週の練習に実際に参加して、三味線を弾いてみましょう！
+                            <br>持ち物や事前の連絡は必要ありません。
+                            <br>お気軽にお越しください！
+                        </p>
+                        <p id="praExpTextForMobile">毎週の練習に実際に参加して、
+                            <br>三味線を弾いてみましょう！
+                            <br>持ち物や事前の連絡は必要ありません。
+                            <br>お気軽にお越しください！
+                        </p>
+                    </div>
+                </div>
+                <div id="practiceDateBoxContainer">
+                    <div class="practiceDateBox">
+                        <img src="imageForStyle/pra9.png" alt="">
+                    </div>
+                    <div class="practiceDateBox">
+                        <img src="imageForStyle/pra11.png" alt="">
+                    </div>
+                    <div class="practiceDateBox">
+                        <img src="imageForStyle/pra18.png" alt="">
+                    </div>
+                    <div class="practiceDateBox">
+                        <img src="imageForStyle/pra23.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slideForMobile">
+            <img src="imageForMobile/praWithTescher.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- 新歓食事会作成 -->
+    <section id="welcomeParty" class="fuwat">
 
     </section>
-</body></html>
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.fuwat').css('visibility', 'hidden');
+            $(window).scroll(function() {
+                var windowHeight = $(window).height(),
+                    topWindow = $(window).scrollTop();
+                $('.fuwat').each(function() {
+                    var objectPosition = $(this).offset().top;
+                    if (topWindow > objectPosition - windowHeight + 200) {
+                        $(this).addClass("fuwatAnime");
+                    }
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
