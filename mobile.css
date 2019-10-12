@@ -284,7 +284,7 @@ nav {
     font-size: 24rem;
     font-weight: 500;
     line-height: 1.1;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05;
     position: absolute;
     z-index: 2;
     top: 50%;
