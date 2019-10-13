@@ -52,18 +52,17 @@ header p {
 }
 
 /*navバーの作成*/
-nav {
+.navForStyle {
     position: relative;
     background-color: rgba(2, 2, 8, 0.9);
 }
-
-nav ul {
+.navForStyle ul {
     list-style-type: none;
     text-align: center;
     padding: 1.5% 0;
 }
 
-nav li {
+.navForStyle li {
     display: inline;
     margin: 2%;
 }
@@ -86,6 +85,14 @@ nav li {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.2s;
+}
+
+.NavMenu{
+    display: none;
+}
+
+.Toggle{
+    display: none;
 }
 
 a:hover {

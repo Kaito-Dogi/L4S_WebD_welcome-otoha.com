@@ -19,6 +19,26 @@
 </head>
 
 <body>
+    <!-- nav -->
+    <!-- ナビメニュー部分 -->
+    <nav class="NavMenu">
+        　<ul>
+            　　<li><a class="navItem" href="#whatIsOtoha">弦音巴とは？</a></li>
+            <li><a class="navItem" href="#expMeetAndLive">説明会・ライブ</a></li>
+            <li><a class="navItem" href="#practiceVisit">練習見学</a></li>
+            <li><a class="navItem" href="#welcomeParty">新歓食事会</a></li>
+            <li><a class="navItem" href="#gallery">活動風景</a></li>
+            <li><a class="navItem" href="#contact">コンタクト</a></li>
+            　
+        </ul>
+    </nav>
+    <!-- ハンバーガーメニュー部分 -->
+    <div class="Toggle">
+        　　<span></span>
+        　　<span></span>
+        　　<span></span>
+    </div>
+
     <!-- ファーストビュー作成 -->
     <header>
         <img class="heroForStyle" src="imageForStyle/hero.jpg" width="100%" alt="">
@@ -41,7 +61,7 @@
         </p>
     </section>
 
-    <nav>
+    <div class="navForStyle">
         <a class="navImg" href="https://otohakeio.wixsite.com/keiootoha"><img src="imageForStyle/otoha-logo.png" alt=""></a>
         <ul>
             <li><a class="navItem" href="#whatIsOtoha">弦音巴とは？</a></li>
@@ -51,7 +71,7 @@
             <li><a class="navItem" href="#gallery">活動風景</a></li>
             <li><a class="navItem" href="#contact">コンタクト</a></li>
         </ul>
-    </nav>
+    </div>
 
     <a id="navImgForMobile" href="https://otohakeio.wixsite.com/keiootoha"><img src="imageForStyle/otoha-logo.png" alt=""></a>
 
@@ -358,6 +378,20 @@
                     dots: false,
                 }
             }, ]
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.Toggle').click(function() {
+                $(this).toggleClass('active');
+
+                if ($(this).hasClass('active')) {
+                    $('.NavMenu').addClass('active');
+                } else {
+                    $('.NavMenu').removeClass('active');
+                }
+            });
         });
     </script>
 
