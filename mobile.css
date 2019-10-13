@@ -81,10 +81,10 @@ header p {
 }
 
 #navImgForMobile {
-    position: fixed;
+    position: absolute;
     top: 16px;
     left: 16px;
-    z-index: 9999;
+    z-index: 1;
     opacity: 0.8;
 }
 
