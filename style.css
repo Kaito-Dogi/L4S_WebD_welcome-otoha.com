@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    margin: 0 0 180px;
+    margin: 0 0 240px;
 }
 
 .forMobile {
@@ -98,7 +98,7 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 120px;
+    margin-top: 160px;
 }
 
 #whatIsOtoha img {
@@ -179,23 +179,23 @@ a:hover {
 }
 
 #shinkan-pv {
-    margin: 8% 4% 4% 8%;
+    margin: 0 4% 4% 8%;
     order: 1;
 }
 
 #tandokukouen {
-    margin: 4% 8% 8% 4%;
+    margin: 4% 8% 4% 4%;
     order: 4;
 }
 
 #expBox {
-    margin: 10% 8% 4% 4%;
+    margin: 2% 8% 4% 4%;
     order: 2;
 
 }
 
 #liveBox {
-    margin: 6% 4% 8% 8%;
+    margin: 6% 4% 4% 8%;
     order: 3;
 }
 
@@ -467,6 +467,15 @@ a:hover {
     text-align: center;
 }
 
+.welcomePartyExplanationForStyle a{
+    font-size: 14rem;
+    font-weight: 400;
+    text-decoration: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
 .welcomePartyDayBox {
     font-size: 56rem;
     font-weight: 700;
@@ -552,16 +561,22 @@ a:hover {
 }
 
 /*コンタクト作成*/
+#contact{
+    margin: -120px 0 120px;
+}
+
 #contact p {
     font-size: 56rem;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 #contact .forStyle {
     font-size: 20rem;
     font-weight: 400;
     text-align: center;
+    margin: 80px 0;
 }
 
 #contact ul {
@@ -571,24 +586,32 @@ a:hover {
 
 #contact li {
     display: inline-block;
-    background-color: #fff;
-    width: 32px;
-    padding: 32px;
-    margin: 32px;
+    padding: 24px 48px;
+    width: 12%;
+    box-sizing: border-box;
+    border-right: 2px solid #fff;
+}
+
+#contact li:last-child{
+    border: none;
 }
 
 #contact a {
-    font-size: 24rem;
-    color: #020208;
     text-decoration: none;
 }
 
-#contact li:hover{
-        opacity: 0.5;
+.icon {
+    color: #fff;
+    font-size: 56rem;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    opacity: 0.5;
 }
 
 /*フッター作成*/
-footer{
+footer {
     color: #fff;
     font-size: 14rem;
     line-height: 4.5;

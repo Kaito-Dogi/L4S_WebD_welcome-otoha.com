@@ -520,30 +520,41 @@ nav {
     font-size: 24rem;
     font-weight: 500;
     text-align: center;
+    margin-bottom: 64px;
 }
 
 #contact .forMobile{
     font-size: 12rem;
     font-weight: 400;
     text-align: center;
+    margin: 64px 0;
+}
+
+#contact a {
+    font-size: 24rem;
+    text-decoration: none;
 }
 
 #contact ul {
     list-style-type: none;
     text-align: center;
-    padding: 1.5% 0;
 }
 
 #contact li {
-    display: inline;
-    margin: 2%;
+    display: inline-block;
+    padding: 12px 28px;
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
 }
 
-#contact a {
+#contact li:last-child{
+    border: none;
+}
+
+.icon {
+    color: #fff;
     font-size: 24rem;
-    color: #020208;
-    text-decoration: none;
-    background-color: #fff;
+    transition: 0.2s;
 }
 
 /*フッター作成*/
